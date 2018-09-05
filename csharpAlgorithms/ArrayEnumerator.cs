@@ -36,17 +36,19 @@ namespace csharpAlgorithms
         }
 
         public bool MoveNext()
-        {
+        {            
+            _curIndex++;
+
             if(_curIndex >= _arr.Length) {
                 _curT = default(T);
                 return false;
             }
             
-            _curIndex++;
-            
             _curT = _arr[_curIndex];
-            if (EqualityComparer<T>.Default.Equals(_curT, default(T)))
+            
+            if (EqualityComparer<T>.Default.Equals(_curT, default(T))) {
                 return false;
+            }
 
             return true;
         }

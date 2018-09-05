@@ -1,13 +1,34 @@
-#CS_Algorithms Project#
+# CS_Algorithms Project
+Common algorithm implementations in C#.
 
-### A simple test runner for CS Dot Net Core ###
+## Dependencies
+* [dotnet cli 2.1.x](https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x)
+```
+dotnet --version
+# 2.1.0-preview1-006703
+```
 
-### Dependencies ###
-* dotnet cli 2.1.x
+## Project Details
+This project was provisioned using the _dotnet new_ command.
+```
+dotnet new classlib -n "csharpAlgorithms"
+dotnet new mstest -n "csharpAlgorithms_Tests"
+```
 
-* dotnet net classlib -n "csharpAlgorithms"
-* dotnet new mstest -n "csharpAlgorithms_Tests"
-* dotnet add reference "../csharpAlgorithms/csharpAlgorithms.csproj"
-* dotnet restore
-* dotnet run
-* dotnet test
+## Getting Started
+The below code statement executes Program.cs.
+
+```
+cd csharpAlgorithms/
+
+dotnet restore
+dotnet run
+```
+
+## Tests
+The below statement executes all Tests that are annotated with [TestMethod]
+
+```
+cd csharpAlgorithms_Tests
+dotnet test
+```

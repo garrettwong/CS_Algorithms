@@ -6,7 +6,13 @@ namespace csharpAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var arr = new string[] { "Hello", "World"};
+            
+            var arrayEnumerator = new ArrayEnumerator<string>(arr);
+            
+            while (arrayEnumerator.MoveNext() ) {
+                Console.WriteLine(arrayEnumerator.Current);
+            }
         }
     }
 }
