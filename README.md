@@ -22,6 +22,7 @@ The below code statement executes Program.cs.
 cd csharpAlgorithms/
 
 dotnet restore
+dotnet build
 dotnet run
 ```
 

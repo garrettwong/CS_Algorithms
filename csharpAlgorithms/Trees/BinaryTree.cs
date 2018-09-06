@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace csharpAlgorithms.Trees
+namespace csharpAlgorithms
 {
     public class TreeNode
     {
